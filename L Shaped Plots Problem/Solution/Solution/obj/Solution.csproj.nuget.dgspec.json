@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abidw\\Desktop\\CodingForFun\\Longest Common Subsequence Problem By Dynamic Programming (Memoization)\\Solution\\Solution\\Solution.csproj": {}
+    "C:\\Users\\abidw\\Desktop\\CodingForFun\\L Shaped Plots Problem\\Solution\\Solution\\Solution.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abidw\\Desktop\\CodingForFun\\Longest Common Subsequence Problem By Dynamic Programming (Memoization)\\Solution\\Solution\\Solution.csproj": {
+    "C:\\Users\\abidw\\Desktop\\CodingForFun\\L Shaped Plots Problem\\Solution\\Solution\\Solution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abidw\\Desktop\\CodingForFun\\Longest Common Subsequence Problem By Dynamic Programming (Memoization)\\Solution\\Solution\\Solution.csproj",
+        "projectUniqueName": "C:\\Users\\abidw\\Desktop\\CodingForFun\\L Shaped Plots Problem\\Solution\\Solution\\Solution.csproj",
         "projectName": "Solution",
-        "projectPath": "C:\\Users\\abidw\\Desktop\\CodingForFun\\Longest Common Subsequence Problem By Dynamic Programming (Memoization)\\Solution\\Solution\\Solution.csproj",
+        "projectPath": "C:\\Users\\abidw\\Desktop\\CodingForFun\\L Shaped Plots Problem\\Solution\\Solution\\Solution.csproj",
         "packagesPath": "C:\\Users\\abidw\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abidw\\Desktop\\CodingForFun\\Longest Common Subsequence Problem By Dynamic Programming (Memoization)\\Solution\\Solution\\obj\\",
+        "outputPath": "C:\\Users\\abidw\\Desktop\\CodingForFun\\L Shaped Plots Problem\\Solution\\Solution\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\abidw\\AppData\\Roaming\\NuGet\\NuGet.Config",
