@@ -15,7 +15,7 @@ public class SolutionTemplate {
         }
     }
 
-    public static long solve(long A, long B) throws Exception {
+    private static long solve(long A, long B) throws Exception {
         return A + B;
     }
 }
