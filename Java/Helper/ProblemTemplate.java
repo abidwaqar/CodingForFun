@@ -3,7 +3,7 @@ package Helper;
 /**
  * Question statement
  */
-public class Template {
+public class ProblemTemplate {
 
     // T = O(n) | S = O(n)
     // Where n is input array's length.
