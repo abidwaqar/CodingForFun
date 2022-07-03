@@ -6,8 +6,8 @@ package Helper;
 public class Program {
     public static void main(String[] args) {
         try {
-            Print.printArray(Problems.IdealDays
-                    .solve(new int[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, 3));
+            System.out.println(Problems.ReachTheEndInTime
+                    .solve(new char[][] { { '.', '.', '#', '#' }, { '#', '.', '#', '#' }, { '#', '.', '.', '.' } }, 5));
         } catch (Exception e) {
             e.printStackTrace();
         }
