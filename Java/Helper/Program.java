@@ -3,13 +3,19 @@ package Helper;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import Problems.MinimizeCashFlow;
+import Problems.ZigZagArray;
+
 /**
  * Driver code
  */
 public class Program {
     public static void main(String[] args) {
         try {
-            System.out.println(Problems.WordBreak.solve("aaaaaa", new ArrayList<>(Arrays.asList("aaaa", "aa"))));
+            System.out.println(
+                    MinimizeCashFlow
+                            .solve(new int[][] { { 0, 1000, 2000, 0 }, { 0, 0, 5000, 0 }, { 0, 0, 0, 8000 },
+                                    { 0, 0, 0, 0 } }));
         } catch (Exception e) {
             e.printStackTrace();
         }
