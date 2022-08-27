@@ -3,8 +3,8 @@ package Helper;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import Problems.MinimizeCashFlow;
-import Problems.ZigZagArray;
+import MinimizeCashFlow;
+import ZigZagArray;
 
 /**
  * Driver code
