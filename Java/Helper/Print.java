@@ -22,6 +22,14 @@ public class Print {
         System.out.println("]");
     }
 
+    public static void printArray(char[] array) {
+        System.out.print("[ ");
+        for (char i : array) {
+            System.out.print("" + i + " ");
+        }
+        System.out.println("]");
+    }
+
     public static <T> void printArray(T[] array) {
         System.out.print("[ ");
         for (T i : array) {
