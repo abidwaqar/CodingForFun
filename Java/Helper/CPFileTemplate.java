@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class CPFileTemplate {
     public static void main(String[] args) {
-        String filePath = "C:\\Users\\abidw.ABID-WORK-LAPTO\\Downloads\\";
+        String filePath = ".\\Java\\Helper\\";
         try (Scanner sc = new Scanner(new File(filePath + "input.txt"));
                 PrintWriter writer = new PrintWriter(filePath + "output.txt")) {
             int T = sc.nextInt();
@@ -17,7 +17,7 @@ public class CPFileTemplate {
                 long A = sc.nextLong();
                 long B = sc.nextLong();
 
-                System.out.println("Case #" + i + ": " + solve(A, B));
+                writer.println("Case #" + i + ": " + solve(A, B));
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());

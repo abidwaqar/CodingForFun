@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class SecondHands {
     public static void main(String[] args) {
-        String filePath = "C:\\Users\\abidw.ABID-WORK-LAPTO\\Downloads\\";
+        String filePath = ".\\Java\\Helper\\";
         try (Scanner sc = new Scanner(new File(filePath + "input.txt"));
                 PrintWriter writer = new PrintWriter(filePath + "output.txt")) {
             int T = sc.nextInt();
@@ -28,6 +28,8 @@ public class SecondHands {
         }
     }
 
+    // T = O(n) | S = O(1)
+    // Where n is input array's length.
     private static boolean solve(int[] clockPartsStyles, int K) throws Exception {
         if (K < (clockPartsStyles.length / 2.0)) {
             return false;
