@@ -17,6 +17,8 @@ public class CPTerminalTemplate {
         }
     }
 
+    // T = O(?) | S = O(?)
+    // Where n is input array's length.
     private static long solve(long A, long B) throws Exception {
         return A + B;
     }
