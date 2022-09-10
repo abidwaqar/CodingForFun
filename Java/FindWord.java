@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-class Main {
+class FindWord {
     public static void main(String[] args) {
         try {
             System.out.println(findWord(new String[] { "P>E", "E>R", "R>U" }));
