@@ -1,8 +1,12 @@
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Scanner;
+import java.util.Set;
 
 public class WaterContainerSystem {
     public static void main(String[] args) {
@@ -41,39 +45,38 @@ public class WaterContainerSystem {
         }
     }
 
-    // T = O(?) | S = O(?)
+    // T = O(n) | S = O(n)
     // Where n is input array's length.
     private static int solve(HashMap<Integer, List<Integer>> containerTree, int litersAdded) throws Exception {
-        preprocess(1, containerTree);
+        List<Integer> levelContainersCount = new ArrayList<>();
+        Queue<Integer> bfs = new LinkedList<>();
+        Set<Integer> seen = new HashSet<>();
 
-        int containersCompletelyFilled = 0;
-        List<Integer> level = new ArrayList<>();
-        level.add(1);
-        while (!level.isEmpty() && level.size() <= litersAdded) {
-            containersCompletelyFilled += level.size();
-            litersAdded -= level.size();
+        bfs.offer(1);
+        while (!bfs.isEmpty()) {
+            levelContainersCount.add(bfs.size());
+            for (int i = bfs.size() - 1; i >= 0; --i) {
+                int currentContainer = bfs.poll();
+                seen.add(currentContainer);
 
-            List<Integer> nextLevel = new ArrayList<>();
-            for (int container : level) {
-                if (containerTree.containsKey(container)) {
-                    nextLevel.addAll(containerTree.get(container));
+                if (!containerTree.containsKey(currentContainer)) {
+                    continue;
+                }
+
+                for (int child : containerTree.get(currentContainer)) {
+                    if (!seen.contains(child)) {
+                        bfs.offer(child);
+                    }
                 }
             }
+        }
 
-            level = nextLevel;
+        int containersCompletelyFilled = 0;
+        for (int i = 0; i < levelContainersCount.size() && levelContainersCount.get(i) <= litersAdded; ++i) {
+            containersCompletelyFilled += levelContainersCount.get(i);
+            litersAdded -= levelContainersCount.get(i);
         }
 
         return containersCompletelyFilled;
-    }
-
-    private static void preprocess(Integer parent, HashMap<Integer, List<Integer>> containerTree) {
-        if (!containerTree.containsKey(parent)) {
-            return;
-        }
-
-        for (int child : containerTree.get(parent)) {
-            containerTree.get(child).remove(parent);
-            preprocess(child, containerTree);
-        }
     }
 }
